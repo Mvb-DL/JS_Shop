@@ -350,16 +350,13 @@ Ebookausgabe(){
         document.write("<td>"+ this.getliteraturgenre()+"<td>");
         document.write("<td>"+ this.getauflage()+"<td>");}}
 
-const alben =[
+const medien =[
     //Alben
     {artikelnummer:"1234567",versandart:"Expressversand",bezahlmethode:"Paypal",altersbeschränkung:"none",preis:11.99,condition:"A",dateofrelease:"1979",datenträger:"MP3 Download",titel: "London Calling",sprache:"Englisch",musikgenre:"Punk/Rock",interpret:"The Clash",label:"SONY MUSIC CATALOG",single:"Train in Vain",EAN:"B00002MVQO"},
     {artikelnummer:"1234567",versandart:"Standardversand",bezahlmethode:"Onlinebanking",altersbeschränkung:"none",preis:11.78,condition:"A",dateofrelease:"2003",datenträger:"CD",titel:"WWII",sprache:"Englisch/Deutsch",musikgenre:"Industrial Metal",interpret:"KMFDM",label:"Sanctuary",single:"WWII",EAN:"B0000CABGD"},
     {artikelnummer:"2379126",versandart:"Expressversand",bezahlmethode:"Paypal",altersbeschränkung:"none",preis:17.99,condition:"A",dateofrelease:"1959",datenträger:"Vinyl",titel:"Kind of Blue",sprache:"Englisch", musikgenre:"Jazz",interpret:"Miles Davis",label:"SONY Legacy",single:"So What",EAN:"B01FX5UG2S"},
     {artikelnummer:"1234567",versandart:"Lieferung an Packstation",bezahlmethode:"Onlinebanking",altersbeschränkung:"none",preis:6.79,condition:"A",dateofrelease:"2016",datenträger:"CD",titel: "High und Hunrig 2 ",sprache:"Deutsch",musikgenre:"Rap/Hip Hop",interpret:"Bonez MC",label:"AUF!KEINEN!FALL!",single:"Optimal",EAN:"B01EVZDZTM"},
     {artikelnummer:"232384",versandart:"Expressversand",bezahlmethode:"Paypal",altersbeschränkung:"none",preis:6.79,condition:"A",dateofrelease:"2011",datenträger:"CD",titel:"Debussy: Children´s Corner",sprache:"Keine Sprache",musikgenre:"Klassik",interpret:"Claude Debussy",label:"Atma Classique",single:"Claire de Lune",EAN:"B005OV1NEC"},
-    ];
-
-const buecher =[
     //Bücher
     {artikelnummer:"127384392",versandart:"Standardversand",bezahlmethode:"Rechnung",altersbeschränkung:"none",preis:11,condition:"A",dateofrelease:"1932",datenträger:"Buch",titel:"Schöne neue Welt",sprache:"Deutsch",autor:"Aldous Huxley",verlag:"Fischer Verlag",seitenzahl:"363 Seiten",ISBN:"978-3-596-90573-7",abmessung:"19 cm x 12,5 cm",literaturgenre:"Science Fiction",auflage:"7.Auflage" },
     {artikelnummer:"823719293",versandart:"Expressversand",bezahlmethode:"Paypal",altersbeschränkung:"none",preis:8.75,condition:"A",dateofrelease:"2018",datenträger:"Leseheft",titel: "Hamlet",sprache:"Englisch",autor: "William Shakespeare",verlag:"Hamburger Lesehefte",seitenzahl:"84 Seiten",ISBN:"978-3-87291-130-8",abmessung:"15 cm x 7,5cm",literaturgenre:"Drama",auflage:"12.Auflage" },
@@ -368,9 +365,8 @@ const buecher =[
     {artikelnummer:"128792839",versandart:"Standardversand",bezahlmethode:"Paypal",altersbeschränkung:"none",preis:12.90,condition:"A",dateofrelease:"1968",datenträger:"Buch",titel: "Früchte des Zorns",sprache:"Deutsch",autor:"John Steinbeck",verlag:"dtv",seitenzahl:"543",ISBN:"978-3-423-10474-6",abmessung:"14 cm x 12 cm ",literaturgenre:"Roman",auflage:"11.Auflage" },
     ];
   
-for ( var i = 0; i <= 5; i++ ){
-console.log(buecher[i]);
-console.log(alben[i]);}	
+for ( var i = 0; i <= 10; i++ ){
+console.log(medien[i]);}	
 
 </script>
 <h1 style="font-size: 60px">Medienshop</h1>
@@ -430,8 +426,8 @@ movie2.Filmausgabe()
     </tr>
   </thead>
 <script>
-for ( var i = 0; i <= 5; i++ ){
-document.write("<tr><td>" + alben[i].artikelnummer + "</td><td>" + alben[i].versandart + "</td><td>" + alben[i].bezahlmethode +  "</td><td>" + alben[i].altersbeschränkung + "</td><td>" + alben[i].preis + " € " + "</td><td>" + alben[i].condition + "</td><td>" + alben[i].dateofrelease + "</td><td>" + alben[i].datenträger + "</td><td>" + alben[i].titel + "</td><td>" + alben[i].sprache + "</td><td>" + alben[i].musikgenre + "</td><td>" + alben[i].interpret + "</td><td>" + alben[i].label + "</td><td>" + alben[i].single + "</td><td>" + alben[i].EAN + "</td>" + "</tr>")}	
+for ( var i = 0; i < 5; i++ ){
+document.write("<tr><td>" + medien[i].artikelnummer + "</td><td>" + medien[i].versandart + "</td><td>" + medien[i].bezahlmethode +  "</td><td>" + medien[i].altersbeschränkung + "</td><td>" + medien[i].preis + " € " + "</td><td>" + medien[i].condition + "</td><td>" + medien[i].dateofrelease + "</td><td>" + medien[i].datenträger + "</td><td>" + medien[i].titel + "</td><td>" + medien[i].sprache + "</td><td>" + medien[i].musikgenre + "</td><td>" + medien[i].interpret + "</td><td>" + medien[i].label + "</td><td>" + medien[i].single + "</td><td>" + medien[i].EAN + "</td>" + "</tr>")}	
 </script>
 </table>
 <table cellspacing="20"; style="border: 3pt solid rgb(216, 32, 32); text-align: center;">
@@ -458,8 +454,8 @@ document.write("<tr><td>" + alben[i].artikelnummer + "</td><td>" + alben[i].vers
      </tr>
   </thead>
 <script>
-for ( var i = 0; i <= 5; i++ ){
-document.write("<tr><td>" + buecher[i].artikelnummer + "</td><td>" + buecher[i].versandart + "</td><td>" + buecher[i].bezahlmethode + "</td><td>" + buecher[i].altersbeschränkung + "</td><td>" + buecher[i].preis + " € " + "</td><td>" + buecher[i].condition + "</td><td>" + buecher[i].dateofrelease + "</td><td>" + buecher[i].datenträger + "</td><td>" + buecher[i].titel + "</td><td>" + buecher[i].sprache + "</td><td>" + buecher[i].autor + "</td><td>" + buecher[i].verlag + "</td><td>" + buecher[i].seitenzahl + "</td><td>" + buecher[i].ISBN + "</td><td>" + buecher[i].abmessung + "</td><td>" + buecher[i].literaturgenre + "</td><td>" + buecher[i].auflage + "</td>" + "</tr>")}	
+for ( var i = 5; i < 10; i++ ){
+document.write("<tr><td>" + medien[i].artikelnummer + "</td><td>" + medien[i].versandart + "</td><td>" + medien[i].bezahlmethode + "</td><td>" + medien[i].altersbeschränkung + "</td><td>" + medien[i].preis + " € " + "</td><td>" + medien[i].condition + "</td><td>" + medien[i].dateofrelease + "</td><td>" + medien[i].datenträger + "</td><td>" + medien[i].titel + "</td><td>" + medien[i].sprache + "</td><td>" + medien[i].autor + "</td><td>" + medien[i].verlag + "</td><td>" + medien[i].seitenzahl + "</td><td>" + medien[i].ISBN + "</td><td>" + medien[i].abmessung + "</td><td>" + medien[i].literaturgenre + "</td><td>" + medien[i].auflage + "</td>" + "</tr>")}	
 </script>
 </table>
 </body>
